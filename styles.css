@@ -32,8 +32,8 @@ header {
 
 .swipe {
   background-color: var(--aqua-blue);
-  transform: translateY(-200px) skewY(-30deg);
-  height: 500px;
+  transform: translateY(-300px) skewY(-30deg);
+  height: 600px;
   width: 100vw;
   position: absolute;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.35);
@@ -229,7 +229,7 @@ footer p {
   background-color: rgb(112, 147, 223);
 }
 
-@media (min-width: 690px) {
+@media (min-width: 750px) {
   body {
     display: flex;
     flex-direction: column;
@@ -244,27 +244,28 @@ footer p {
     align-self: center;
     align-items: flex-start;
     margin: 3rem;
-    margin-top: 5rem;
+    margin-top: 8rem;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.250);
     z-index: 1;
     background-color: white;
     width: calc(100vw - 8rem);
     max-width: 750px;
-    min-width: 610px;
+    min-width: 650px;
   }
 
   picture .header-img {
-    width: 350px;
+    width: 400px;
     margin-left: -2rem;
-    margin-top: -4rem;
+    margin-top: -6rem;
     float: left;
   }
 
   .full-name {
-    top: -1.5rem;
+    top: 0.5rem;
     margin-left: 30vw;
     width: auto;
     font-size: 3.5rem;
+    font-weight: 100;
   }
 
   section>h2 {
