@@ -6,16 +6,26 @@
   <title>Homepage</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
+<!-- Breakpoints 
+     Mobile: 320px-690px 
+     Table: 690px-950px-->
 <body>
+  <div class="swipe"></div>
   <header>
-    <div class="swipe"></div>
-    <img class="header-img" 
-    srcset="./images/header-image-cropped-large.jpg 2x,
-            ./images/header-image-cropped-medium.jpg 1.5x,
-            ./images/header-image-cropped-small.jpg"
-    src="./images/header-image-cropped-small.jpg" 
-    sizes="calc(320px - 2rem)"
-    alt="Two puppies in a field">
+    <picture>
+      <source class="header-img-large"
+              media="(min-width: 690px)"
+              srcset="./images/header-image-large.jpg 2x,
+                      ./images/header-image-medium.jpg 1.5x,
+                      ./images/header-image-small.jpg">
+      <img class="header-img"
+      srcset="./images/header-image-cropped-large.jpg 2x,
+              ./images/header-image-cropped-medium.jpg 1.5x,
+              ./images/header-image-cropped-small.jpg"
+      src="./images/header-image-cropped-small.jpg"
+      sizes="calc(320px - 2rem)"
+      alt="Two puppies in a field">
+    </picture>
     <h1 class="full-name">David Reichert</h1>
     <section>
       <h2>About me</h2>
@@ -165,7 +175,11 @@
       </div>
     </div>
     <img class="footer-image"
+    srcset="./images/header-image-cropped-large.jpg 2x,
+            ./images/header-image-cropped-medium.jpg 1.5x,
+            ./images/header-image-cropped-small.jpg"
     src="./images/footer-image-cropped-large.jpg"
+    sizes="100vw"
     alt="Husky puppy under a tree">
   </footer>
 </body>
