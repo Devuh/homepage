@@ -219,6 +219,10 @@ footer p {
   align-self: center;
 }
 
+.phone>svg, .email>svg {
+  display: none;
+}
+
 .footer-image {
   margin: 0 -2rem;
   margin-top: 2rem;
@@ -243,6 +247,12 @@ footer p {
 
 .blue {
   background-color: rgb(112, 147, 223);
+}
+
+@media (max-width: 749px) {
+  .footer-image {
+    margin-bottom: -2rem;
+  }
 }
 
 @media (min-width: 750px) {
@@ -334,6 +344,16 @@ footer p {
     margin-left: 0;
   }
 
+  .phone, .email {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .phone>svg, .email>svg {
+    height: 2rem;
+    display: inline;
+  }
+
   .contact-page>.icons {
     align-self: flex-start;
   }
@@ -353,14 +373,14 @@ footer p {
     header {
       width: calc(100vw - 5rem);
       height: 503px;
-      max-width: 1200px;
+      max-width: 1400px;
       position: relative;
     }
 
     .header-img {
       width: 36rem;
       margin: -1.25rem;
-      margin-right: 3rem;
+      margin-right: 2rem;
       float: left;
     }
 
@@ -389,11 +409,47 @@ footer p {
       top: 1rem;
     }
 
+    header p {
+      position: relative;
+      top: 1rem;
+    }
+
     header .icons {
       visibility: visible;
       position: absolute;
       bottom: 1rem;
       right: 1rem;
+    }
+
+    .card {
+      min-width: 320px;
+      width: calc(30vw - 3rem);
+    }
+
+    .cards {
+      grid-template-columns: repeat(3, minmax(auto, 1fr));
+    }
+
+    footer {
+      justify-content: center;
+      gap: 10vw;
+    }
+
+    .phone, .email {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .phone>svg, .email>svg {
+      height: 2rem;
+    }
+
+    .phone {
+      margin-bottom: 1rem;
+    }
+
+    .footer-image {
+      width: 35rem;
     }
   }
 }
