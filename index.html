@@ -12,22 +12,22 @@
 <body>
   <div class="swipe"></div>
   <header>
-    <picture>
-      <source class="header-img-large"
-              media="(min-width: 750px)"
-              srcset="./images/header-image-large.jpg 2x,
-                      ./images/header-image-medium.jpg 1.5x,
-                      ./images/header-image-small.jpg">
-      <img class="header-img"
-      srcset="./images/header-image-cropped-large.jpg 2x,
-              ./images/header-image-cropped-medium.jpg 1.5x,
-              ./images/header-image-cropped-small.jpg"
-      src="./images/header-image-cropped-small.jpg"
-      sizes="calc(320px - 2rem)"
-      alt="Two puppies in a field">
-    </picture>
     <h1 class="full-name">David Reichert</h1>
     <section>
+      <picture>
+        <source class="header-img-large"
+                media="(min-width: 750px)"
+                srcset="./images/header-image-large.jpg 2x,
+                        ./images/header-image-medium.jpg 1.5x,
+                        ./images/header-image-small.jpg">
+        <img class="header-img"
+        srcset="./images/header-image-cropped-large.jpg 2x,
+                ./images/header-image-cropped-medium.jpg 1.5x,
+                ./images/header-image-cropped-small.jpg"
+        src="./images/header-image-cropped-small.jpg"
+        sizes="calc(320px - 2rem)"
+        alt="Two puppies in a field">
+      </picture>
       <h2>About me</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quis officiis corporis et exercitationem voluptatum totam ipsam qui veritatis facere pariatur in ipsa nobis iure deserunt, ut consequatur saepe ullam.</p>
       <div class="icons">
@@ -44,8 +44,8 @@
     </section>
   </header>
   <main>
-    <h2>My work</h2>
     <div class="cards">
+      <h2>My work</h2>
       <div class="card">
         <div class="screenshot purple">
           <h1>screenshot of project</h1>
