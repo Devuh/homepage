@@ -18,10 +18,15 @@
   src: url(./fonts/Roboto-VariableFont_wdth\,wght.ttf);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;
   gap: 100px;
+  overflow-x: hidden;
 }
 
 header {
